@@ -217,7 +217,7 @@ footer ul li a:hover{color: #98bf11;}
 
 @media(max-width: 768px){
 	.pipe-top-vertical{
-		margin-top: 175px;
+		margin-top: 200px;
     margin-left: 230px;
 	}
 	.pipe-bottom-vertical{
@@ -303,4 +303,33 @@ footer ul li a:hover{color: #98bf11;}
   }
   .form-subscribe form{margin-left: -30px;}
   h1{font-size: 25px;}
+}
+
+@media(max-width: 390px){
+	.pipe-top-vertical{
+		width: 220px;
+    margin-top: 180px;
+    margin-left: 100px;
+  }
+  .pipe-bottom-vertical{
+    margin-top: -45px;
+    margin-left: -20px;
+  }
+  .section-three{padding-top: 5px; min-height: 555px;}
+  .about-us-detail{padding-top: 0px;}
+  .about-us-text{font-size: 14px;}
+  .cars{
+  	width: 325px;
+    height: 250px;
+    margin-top: 290px;
+    margin-left: -23px;
+  }
+  .section-one{padding-top: 0px; min-height: 485px;}
+  .text-info{
+  	font-size: 15px;
+    margin-top: 15px;
+  }
+  .form-subscribe form{margin-left: -30px;}
+  h1{font-size: 25px;}
+  .title-1 {font-size: 25px;}
 }
