@@ -7,7 +7,7 @@ set :repo_url, 'git@github.com:pebiantara/landing-page.git'
 set :rails_env, "production"
 set :env, "production"
 
-set :domain, "159.203.168.93"
+set :domain, "104.236.62.186"
 set :user, "ubuntu"
 set :port, 22
 set :branch, "master"

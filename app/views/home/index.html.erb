@@ -1,196 +1,124 @@
-<div class="header-con">
+<section class="section-one">
   <div class="container">
-   <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
-     <div class="handcard">					
-     </div>
-     <div class="phonetop">					
-     </div>
+   <h1>Improve the profit of your drop shipping business</h1> 
+   <h2 class="green">with discounted Amazon Gift Cards</h2>
+   <div class="form-subscribe col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2   col-xs-10 col-xs-offset-1">
+    <div class="text-info">
+     Start now and get a free $10 Amazon
+     <br/>
+     Gift card code in your account:
    </div>
-   <div class="col-lg-8 col-md-8 col-sm-7 col-md-offset-0 col-sm-offset-1">
-     <div class="head-title">
-      <h1>Play the state lottery Online<br/>And Pay With Unwanted Gif Card balances</h1>
-    </div>
-    <br/>
-    <br/>
-    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-      <h3>Subscribe to our beta version:</h3>
-      <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
-      <div class="">
-        <%= f.text_field :email, class: 'input-email', placeholder: 'E-mail address' %>
-        <%= f.button "sign up", class: 'btn-email', data: {disable_with: 'submit...'} %>
-      </div>
-      <% end %>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="triangle1">
-  <div class="container">&nbsp </div>
-</div>
-</div>
-<div class=""></div>
-<div class="content">
- <div class="container">
-  <div class="row">
-   <div class="col-lg-4 col-md-4 col-sm-4 text-center">
-    <div class="powerball"></div>
-    <div class="tContent2">
-     <b><%= lottery_amounts[:powerball] %></b>
-     <p>Next JackPot:</p>
-     <p class="countdown-powerball" data-date="<%= powerball_jackpot %>">-</p>
-   </div>
- </div>
- <div class="col-lg-4 col-md-4 col-sm-4 text-center">
-  <div class="floridalotto text-center"></div>
-  <div class="tContent2">
-   <b><%= lottery_amounts[:lotto] %></b>
-   <p>Next JackPot:</p>
-   <p class="countdown-lotto" data-date="<%= lotto_jackpot %>">-</p>
-   <br/>
- </div>				
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4 text-center">		
-  <div class="megamillions text-center"></div>
-  <div class="tContent2">
-   <b><%= lottery_amounts[:megaMillions] %></b>
-   <p>Next JackPot:</p>			
-   <p class="countdown-mega" data-date="<%= mega_jackpot%>">-</p>
- </div>				
-</div>
-<div class="more-lotery col-md-12 text-center"><p>+ 3 Other Lotteries</p></div>
-</div>
-</div>
-</div>
-
-<div class="c-how">
- <div class="container">
-  ,<div class="row">
-  <div class="col-md-12 text-center"><h1>How it works</h1></div>
-
-  <div class="col-lg-3 col-md-3 col-sm-3 steps col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
-   <%= image_tag("step-1.png", width: '178', height: '176') %>
+   <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
    <div class="">
-    <h3>1. Choose</h3>
-    <p>Select a game and your lucky<br/>
-     nombers to play the lotteries<br/>
-     you know and love<br/></p>
+    <%= f.text_field :email, class: 'email-input', placeholder: 'E-mail address' %>
+    <%= f.button "sign up", class: 'btn-subscribe', data: {disable_with: 'submit...'} %>
+  </div>
+  <% end %>
+</div>
+<div class="pipe-top hidden-xs"></div>
+<div class="pipe-top-vertical hidden-lg hidden-md hidden-sm"></div>
+</div>
+</section>
+<div class="clearfix"></div>
+<section class="section-two gray-background">
+  <div class="container">
+   <div class="title-1">
+    <span>How it works</span>
+  </div>
+  <p class="desc">
+    LionGiftCards is a system to provide you discounted Amazon gif cards and automatically managing the gift code balance on your Amazon account(s). We will automatically add codes to your Account soon after your payment is received.
+  </p>
+  <div class="col-sm-4 col-md-4 text-center how-it-works">
+    <img src="assetspercent.png" class=""></img>
+    <h4 class="green">High discounts for bulk purchases</h4>
+    <p class="desc-detail">Get up 10% discount in your bulk gift codes purchases</p>
+  </div>
+  <div class="col-sm-4 col-md-4 text-center how-it-works">
+    <img src="assetsloading.png" class=""></img>
+    <h4 class="green">Automatically redemption</h4>
+    <p class="desc-detail">Connect your Amazon account and start to redeeming codes</p>
+  </div>
+  <div class="col-sm-4 col-md-4 text-center how-it-works">
+    <img src="assetspilot.png" class=""></img>
+    <h4 class="green">Autopilot gift codes management</h4>
+    <p class="desc-detail">Just choose a daily budget and our Lion will feeds your account with</p>
+  </div>
+  <div class="col-sm-4 col-md-4 text-center how-it-works">
+    <img src="assetsheadset.png" class=""></img>
+    <h4 class="green">Live customer suport</h4>
+    <p class="desc-detail">Have a question, problem, or request? Reach us anytime by phone, email or chat.</p>
+  </div>
+  <div class="col-sm-4 col-md-4 text-center how-it-works">
+    <img src="assetsdocument.png" class=""></img>
+    <h4 class="green">Tracking in real time</h4>
+    <p class="desc-detail">You can get online reports to monitorize the redemption activity.</p>
+  </div>
+  <div class="col-sm-4 col-md-4 text-center how-it-works">
+    <img src="assetsalarm.png" class=""></img>
+    <h4 class="green">Set alerts</h4>
+    <p class="desc-detail">You never will be out of codes, you can setup triggers to activate new redemptions when your balance fell below of an amount desired.</p>
+  </div>
+</div>
+</section>
+<section class="section-three">
+  <div class="container">
+   <div class="pipe-bottom hidden-xs"></div>
+   <div class="pipe-bottom-vertical hidden-lg hidden-md hidden-sm"></div>
+   <div class="title-1">
+    About Us
+  </div>
+  <div class="about-us-detail">
+    <div class="logo-instabuyback col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-9 col-xs-offset-3">
+      <img src="assetsinstabuyback.png" class="img-responsive"></img>
+    </div>
+    <div class="about-us-text col-md-6 col-sm-7 col-xs-9 col-xs-offset-3 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
+     While your business is running automatically, our LionGiftCard Team is purchasing and purchasing unwanted gift cards from business and customers
+     in order to provide you the best discounts. LionGiftCard is brouht to you by INSTABUYBACK LLC, a trade-in company located in Miami, Florida.
    </div>
  </div>
- <div class="step-arrow hidden-xs">
- </div>
- <div class="col-lg-3 col-md-3 col-sm-3 steps">
-  <%= image_tag('step-2.png', width: '178', height: '176') %>
-  <div class="">
-   <h3>2. Trade-in</h3>
-   <p>Turn gift cards into USD credit<br/>
-    to pay for your oficial lottery<br/>
-    tickets<br/></p>
-  </div>
-</div>
-<div class="step-arrow hidden-xs">
-</div>
-<div class="col-lg-3 col-md-3 col-sm-3 steps">
- <%= image_tag('step-3.png', width: '178', height: '176') %>
- <div class="">
-  <h3>3. Play</h3>
-  <p>Your oficial lottery ticket will<br/>
-   be scanned and uploaded to<br/>
-   your account before each<br/>
-   draw. 100% of the rpize money<br/>
-   will then be credited to your<br/>
-   account when you win <br/></p>
- </div>
-</div>
+ <div class="cars">
 
+ </div>
 </div>
-</div>
-</div>
-<div class="triangle2">
- <div class="container">&nbsp </div>
-</div>
-<div class="c-easy">
- <div class="container">
-  <div class="row ">
-   <div class="col-md-12 text-center"><h1>Easy, Safe & Convenient</h1></div>
-   <div class="col-md-6">
-    <%= image_tag('object-3.png', class: 'img-responsive') %>
+</section>
+<section class="section-four gray-background">
+  <div class="arrow-up"></div>
+  <div class="container">
+   <div class="title-1">
+    Our Markets
   </div>
-  <div class="col-md-6">					
-    <div class="c-easy-mar">
-     <p class="c-easy-t1">GiftForWin acts as a free courier service<br/>
-      between you and official lottery retailers.<br/>
-      Our official messengers will buy the lotery<br/>
-      tickets on your behalf though livensed retailers.<br/>
-      <br/>
-      Our service is brought to you by<br/>
-      INSTABUYBACK LLC, a trade-in company that<br/>
-      makes money when it changes your gif card<br/>
-      balance into U.S. dollars<br/>
-    </p>
-    <br/>
-    <br/>
-    <p class="c-easy-t2">Most major Gift Cards and e-Gift Cards accepted:</p>
-    <div class="">
-      <%= image_tag('amazon.png', width: '78', height: '51') %>
-      <%= image_tag('walmart.png', width: '78', height: '51') %>
-      <%= image_tag('oldnavy.png', width: '78', height: '51') %>
-      <br/>
-      <%= image_tag('target.png', width: '78', height: '51') %>
-      <%= image_tag('ebay.png', width: '78', height: '51') %>
-      <!-- <#%= image_tag('brand.png', width: '78', height: '51') %> -->
-      <%= link_to "#" do %>
-        <span class="brand c-easy-t2">+100 brands</span>
-      <% end %>
+  <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3 our-markets text-center">
+    <div class="box-img liberty">
     </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="c-where">
- <div class="container">
-  <div class="row text-center">
-   <div class="col-md-12 text-center"><h1>Where can you play?</h1><h4>We use GPS technology to ensure you are in a state we support</h4></div>
-   <div class="col-md-4"> 
-    <%= image_tag('florida.png', width: '201', height: '201') %>
-    <div class="">
-     <h3>Florida</h3>
-     <p>6 Games Supported</p>
-   </div>
- </div>
- <div class="col-md-4"> 
-  <%= image_tag('newyork.png', width: '201', height: '201') %>
-  <div class="">
-   <h3>New York</h3>
-   <p>Coming soon</p>
- </div>
-</div>
-<div class="col-md-4"> 
-  <%= image_tag('california.png', width: '201', height: '201') %>
-  <div class="">
-   <h3>California</h3>
-   <p>Coming soon</p>
- </div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-play">
- <div class="container">
-  <div class="row">
-   <div class="col-lg-4 col-md-4"><h1>Ready to play?</h1></div>
-   <div class="col-lg-8 col-md-8">
-    <h4>Subscribe to the our beta version to start winning:</h4>
-    <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
-    <div class="">
-      <%= f.text_field :email, class: 'input-email', placeholder: 'E-mail address' %>
-      <%= f.button "sign up", class: 'btn-email', data: {disable_with: 'submit...'} %>
+    <h4 class="green">USA</h4>
+    <p class="desc-detail">Bussines and sellers only 
     </div>
-    <% end %>
+    <div class="col-sm-4 col-md-3 our-markets text-center">
+      <div class="box-img greenwich">
+      </div>
+      <h4 class="green">UK</h4>
+      <p class="desc-detail">Coming soon
+      </div>
+      <div class="clearfix"></div>
+      <div class="cs col-md-12 desc">
+        Customer Service: <br/>
+        Call 888-616-3938 <br/>
+        Mon-Fri // 9AM-5PM EST
+      </div>
+    </div>
+  </section>
+  <section class="section-five">
+    <div class="container">
+     <div class="ready col-lg-4 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 col-lg-offset-2">
+      Ready to get discounts?
+    </div>
+    <div class="form-subscribe col-lg-4 col-md-6 col-lg-offset-0 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+   <%= form_for @subscription, as: :subscription, url: subscriptions_path, remote: true, authenticity_token: true do |f| %>
+   <div class="">
+    <%= f.text_field :email, class: 'email-input', placeholder: 'E-mail address' %>
+    <%= f.button "sign up", class: 'btn-subscribe', data: {disable_with: 'submit...'} %>
+  </div>
+  <% end %>
   </div>
 </div>
-</div>
-</div>
+</section>

@@ -1,43 +1,46 @@
-/*HEADER*/
-.header{
-	background: url('<%= asset_path("bar.png") %>') #04386a repeat-x;
-}
-.logo{
-	background: url('<%= asset_path("logo.png") %>');	
-}
-
-.triangle1{
-	background: url('<%= asset_path("triangle-top.png") %>') no-repeat;
+@font-face {
+	font-family: 'nexa';
+	src: url('<%= asset_path("fonts/nevis.ttf") %>'); /* IE9 Compat Modes */
+	src: url('<%= asset_path("fonts/nexabold.otf") %>'),
+	  url('<%= asset_path("fonts/nexalight.otf") %>')
 }
 
-/*CONTEN*/
-
-.header-con{
-	background: url('<%= asset_path("bg-header-con.png") %>')  #0c548f repeat-x;
+.title-1:before{
+	background: url('<%= asset_path("title-left.png") %>') no-repeat;
 }
 
-.handcard{
-	background: url('<%= asset_path("object-1.png") %>');
-}
-.phonetop{
-	background: url('<%= asset_path("object-2.png") %>');
+.title-1:after{
+	background: url('<%= asset_path("title-right.png") %>') no-repeat;
 }
 
-.powerball{
-	background: url('<%= asset_path("b-powerball.png") %>');
+.arrow-up {
+	background: url('<%= asset_path("arrow-up.png") %>') no-repeat;
 }
 
-.floridalotto{
-	background: url('<%= asset_path("b-floridalotto.png") %>');
+.liberty{
+	background: url('<%= asset_path("liberty.png") %>') no-repeat;
 }
 
-.megamillions{
-	background: url('<%= asset_path("b-megamillions.png") %>');
+.greenwich{
+	background: url(' <%= asset_path("greenwich.png") %>') no-repeat;
 }
 
-.triangle2{
-	background: url('<%= asset_path("triangle.png") %>') no-repeat;
+.pipe-top{
+	background: url(' <%= asset_path("pipe-top.png") %>') no-repeat;
 }
-.step-arrow{
-  background: url('<%= asset_path("arrow.png") %>') no-repeat;	
+
+.pipe-top-vertical{
+	background: url('<%= asset_path("pipe-top-vertical.png") %>') no-repeat;
+}
+
+.pipe-bottom{
+	background: url('<%= asset_path("pipe-bottom.png") %>') no-repeat;
+}
+
+.pipe-bottom-vertical{
+	background: url('<%= asset_path("pipe-bottom-vertical.png") %>') no-repeat;
+}
+
+.cars{
+	background: url('<%= asset_path("car.png") %>') no-repeat;
 }

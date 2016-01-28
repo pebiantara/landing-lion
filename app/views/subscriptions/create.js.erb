@@ -2,10 +2,10 @@ error = <%= !@subscription.errors.empty? %>;
 errors = <%= @subscription.errors.full_messages.to_json.html_safe %>;
 $('small.msg').remove();
 if(error){
-  html = "<small class=\"msg\" style=\"color:#fff;\"><%= @subscription.errors.full_messages.join(', ') %></small>"
-  $('.input-email').parents('form').append(html);
+  html = "<small class=\"msg green\"><%= @subscription.errors.full_messages.join(', ') %></small>"
+  $('.email-input').parents('form').append(html);
 }else{
-  html = "<small class=\"msg\" style=\"color:#fff;\">Thank you, Lets to play!</small>"
-  $('.input-email').parents('form').append(html);
-  $('.input-email').val('');
+  html = "<small class=\"msg green\">Thank you!</small>"
+  $('.email-input').parents('form').append(html);
+  $('.email-input').val('');
 }

@@ -3,7 +3,7 @@ class Subscribe < ApplicationMailer
   def subscription(email)
     mail(
       :to => email, 
-      :subject => "GiftForWin - subscribed"
+      :subject => "LionGiftCard - subscribed"
     )
   end
 end

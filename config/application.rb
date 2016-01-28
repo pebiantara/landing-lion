@@ -27,8 +27,8 @@ module LandingPage
       :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => "gmail.com",
-      :user_name            => "giftforwin@gmail.com",
-      :password             => "G1ft4W1n",
+      :user_name            => "liongiftcard@gmail.com",
+      :password             => "liongiftcard2102",
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
