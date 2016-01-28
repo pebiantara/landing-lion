@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'landing-page'
-set :repo_url, 'git@github.com:pebiantara/landing-page.git'
+set :repo_url, 'git@github.com:pebiantara/landing-lion.git'
 
 set :rails_env, "production"
 set :env, "production"
