@@ -84,7 +84,7 @@ input.form-control::-webkit-input-placeholder,
 .logo img{width: 200px;}
 .second_color{color: #9c9aa0;}
 header nav.header{padding: 10px;border-bottom: 5px solid #98bf11;}
-.section-one{padding-top: 60px;}
+.section-one{padding-top: 40px;}
 .section-one h1, .section-one h2{text-align: center; font-weight: bold;}
 
 section{min-height: 100px; padding: 50px 0px;}
@@ -205,7 +205,7 @@ footer ul li a:hover{color: #98bf11;}
 	background-size: 100%;
 	width: 925px;
 	height: 500px;
-	margin-top: 142px;
+	margin-top: 162px;
 	margin-left: 100px;
 }
 
