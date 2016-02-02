@@ -7,6 +7,80 @@ body{
 
 .gray-background{background-color: #f2f0f0; }
 .green{color: #98bf11;}
+.green-bk{background: #98bf11;}
+.white{color: #fff;}
+.btn-primary{background: #98bf11; border: none;}
+
+.btn-login:focus, .btn-login:hover, .btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+  background: #9c9aa0; 
+  color: #fff;
+}
+
+.form-control:focus{
+  border-color: #98bf11;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.width-full{width: 100%;}
+.form-group>input{
+  margin-top: 2px;
+}
+
+.alert-error{color: red;}
+.alert-green{color: green;}
+
+.btn{margin-bottom: 2px;}
+.dropdown-password{margin-top: 36px !important;}
+
+footer{position: fixed; bottom: 0;}
+
+.sign-up-form{
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  margin-top: 50px;
+}
+
+.sign-up-form h2{padding-bottom: 20px;}
+
+input.form-control{
+  color: #98bf11;
+  /*border: 1px solid #98bf11;*/
+}
+
+::-webkit-input-placeholder {
+    color: #98bf11;
+}
+:-moz-placeholder {
+    color: #98bf11;
+}
+::-moz-placeholder {
+    color: #98bf11;
+}
+
+:-ms-input-placeholder {
+    color: #98bf11;
+}
+
+input.form-control::-webkit-input-placeholder,
+{
+  color: #98bf11;
+}
+/*.btn-login{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+.btn{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+*/
+
+.dropdown-menu{min-width: 300px; padding: 10px;}
+.dropdown-menu a{color: #9c9aa0 !important;}
+.ct-padding{padding-bottom: 150px;}
 .logo img{width: 200px;}
 .second_color{color: #9c9aa0;}
 header nav.header{padding: 10px;border-bottom: 5px solid #98bf11;}
@@ -18,7 +92,7 @@ section{min-height: 100px; padding: 50px 0px;}
 .section-two{padding-bottom: 75px; padding-top: 100px;}
 .section-three{min-height: 700px;}
 .section-one{min-height: 648px;}
-.section-five{padding-top: 30px;}
+.section-five{padding-top: 30px; margin-bottom: 100px;}
 .section-four{padding-bottom: 50px;}
 .section-four .title-1{margin-top: 40px;}
 .text-info{color: #9c9aa0; text-align: center; font-size: 20px;margin-top: 50px; margin-bottom: 20px;}
@@ -168,6 +242,10 @@ footer ul li a:hover{color: #98bf11;}
 }
 
 .box-img{width: 180px; height: 180px; border-radius: 50%; overflow: hidden; margin: auto;}
+
+ul.nav.navbar-nav.navbar-right{padding-top: 10px;}
+
+
 /* responsive css */
 
 @media (max-width: 400px) and (min-width: 200px){

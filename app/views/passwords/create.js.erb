@@ -1,0 +1,11 @@
+error = <%= @error %>;
+message = "<%= @message %>";
+$('small.alert-error, small.alert-green').remove();
+$(".forgot-password form i").addClass('hide');
+if(error){
+  html = "<small class='alert-error'>"+message+"</small>";
+  $(".forgot-password form").prepend(html);
+}else{
+  html = "<small class='alert-green'>Reset password instruction has been sent. Please check your email.</small>";
+  $(".forgot-password form").prepend(html);
+}

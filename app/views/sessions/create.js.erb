@@ -1,0 +1,10 @@
+error = <%= @error %>;
+message = "<%= @message %>";
+$('small.alert-error').remove();
+$(".sign-in form i").addClass('hide');
+if(error){
+  html = "<small class='alert-error'>"+message+"</small>";
+  $(".sign-in form").prepend(html);
+}else{
+  window.location = "<%= @redirect_to %>"; 
+}

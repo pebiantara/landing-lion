@@ -1,0 +1,22 @@
+<div class="container ct-padding">
+	<div class='col-lg-4 col-lg-offset-4 gray-background sign-up-form'>
+		<h2 class="text-center">Create Account</h2>
+		<%= form_tag sign_up_path do %>
+		<div class="form-group">
+			<%= email_field_tag "user[email]", @user["email"], class: 'form-control input-lg', placeholder: 'Email address' %>
+			<small class="alert-error"><%= @errors["email"].join(", ") rescue nil %></small>
+		</div>
+		<div class="form-group">
+			<%= password_field_tag "user[password]", @user["password"], class: 'form-control input-lg', placeholder: 'Password' %>
+			<small class="alert-error"><%= @errors["password"].join(", ") rescue nil %></small>
+		</div>
+		<div class="form-group">
+			<%= password_field_tag "user[password_confirmation]", @user["password_confirmation"], class: 'form-control input-lg', placeholder: 'Password confirmation' %>
+			<small class="alert-error"><%= @errors["password_confirmation"].join(", ") rescue nil %></small>
+		</div>
+		<div class="form-group">
+			<%= button_tag "Create", type: 'submit', class: 'btn btn-primary width-full btn-lg' %>
+		</div>
+		<% end %>
+	</div>
+</div>

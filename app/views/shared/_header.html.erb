@@ -1,0 +1,50 @@
+<header>
+    <nav class="navbar navbar-default gray-background header">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to root_path do %>
+          <div class="logo"><img src="assetslogo.png" class="img-responsive"></img></div>
+        <% end %>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown sign-in">
+            <button data-toggle="dropdown" type="submit" class="btn btn-login green-bk white" onclick="$('.forgot-password').removeClass('open');"><b>Login</b></button>
+            <div class="dropdown-menu">
+              <%= form_tag sign_in_path, remote: true, data: {disable_with: 'Signing in...'}, authenticity_token: true do %>
+                <div class="form-group">
+                  <input type="email" placeholder="Enter email" id="email-address-login" class="form-control" name="email">
+                  <input type="password" placeholder="Password" id="password-login" class="form-control" name="password">
+                </div>
+                <button class="btn btn-primary width-full" type="submit" onclick=""><i class="fa fa-spin fa-spinner hide"></i> Sign in</button>
+              <% end %>
+              <div class="col-lg-6 no-padding col-xs-6">
+                <%= link_to "Forgot Password?", "javascript:void(0)", onclick: "$('.forgot-password').addClass('open');" %>
+              </div>
+              <div class="col-lg-6 no-padding col-xs-6 text-right">
+                <%= link_to "Create account", sign_up_path %>
+              </div>            
+            </div>
+          </li>
+          <li class="dropdown forgot-password">
+            <div class="dropdown-menu dropdown-password">
+              <%= form_tag forgot_password_path, remote: true, data: {disable_with: 'Resetting...'}, authenticity_token: true do %>
+                <div class="form-group">
+                  <input type="email" placeholder="Enter email" id="email-address-login" class="form-control" name="email">
+                </div>
+                <button class="btn btn-primary width-full" type="submit">Reset Password</button>
+                <%= link_to "Cancel", "#", class: 'btn btn-default width-full', onclick: "$('.sign-in').addClass('open');$('.forgot-password').removeClass('open');" %>
+              <% end %>
+            </div>
+          </li>
+        </ul>              
+      </div>
+    </div>
+  </nav>
+</header>
