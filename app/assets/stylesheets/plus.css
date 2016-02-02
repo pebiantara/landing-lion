@@ -10,6 +10,10 @@ header{
   z-index:999;
   opacity: 1;
 }
+
+.section-one h1, .title-1, .dropdown-menu, .sign-up-form{
+  font-family: 'nexa-light';
+}
 .gray-background{background-color: #f2f0f0; }
 .green{color: #98bf11;}
 .green-bk{background: #98bf11;}
