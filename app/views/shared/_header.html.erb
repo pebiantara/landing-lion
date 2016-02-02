@@ -17,12 +17,14 @@
           <li class="dropdown sign-in">
             <button data-toggle="dropdown" type="submit" class="btn btn-login green-bk white" onclick="$('.forgot-password').removeClass('open');"><b>Login</b></button>
             <div class="dropdown-menu">
-              <%= form_tag sign_in_path, remote: true, data: {disable_with: 'Signing in...'}, authenticity_token: true do %>
+              <%= form_tag sign_in_path, remote: true, authenticity_token: true do %>
                 <div class="form-group">
                   <input type="email" placeholder="Enter email" id="email-address-login" class="form-control" name="email">
                   <input type="password" placeholder="Password" id="password-login" class="form-control" name="password">
                 </div>
-                <button class="btn btn-primary width-full" type="submit" onclick=""><i class="fa fa-spin fa-spinner hide"></i> Sign in</button>
+                <%= button_tag type: 'submit', class: "btn btn-primary width-full", data: { disable_with: '<i class="fa fa-spin fa-spinner"></i> Signing in...'} do %>
+                  Sign In
+                <% end %>
               <% end %>
               <div class="col-lg-6 no-padding col-xs-6">
                 <%= link_to "Forgot Password?", "javascript:void(0)", onclick: "$('.forgot-password').addClass('open');" %>
@@ -34,11 +36,14 @@
           </li>
           <li class="dropdown forgot-password">
             <div class="dropdown-menu dropdown-password">
-              <%= form_tag forgot_password_path, remote: true, data: {disable_with: 'Resetting...'}, authenticity_token: true do %>
+              <%= form_tag forgot_password_path, remote: true, authenticity_token: true do %>
                 <div class="form-group">
                   <input type="email" placeholder="Enter email" id="email-address-login" class="form-control" name="email">
                 </div>
-                <button class="btn btn-primary width-full" type="submit">Reset Password</button>
+                <%= button_tag type: 'submit', class: "btn btn-primary width-full", data: { disable_with: '<i class="fa fa-spin fa-spinner"></i> processing...'} do %>
+                  Reset Password
+                <% end %>
+
                 <%= link_to "Cancel", "#", class: 'btn btn-default width-full', onclick: "$('.sign-in').addClass('open');$('.forgot-password').removeClass('open');" %>
               <% end %>
             </div>
