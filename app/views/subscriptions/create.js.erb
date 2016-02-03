@@ -1,11 +1,11 @@
 error = <%= !@subscription.errors.empty? %>;
 errors = <%= @subscription.errors.full_messages.to_json.html_safe %>;
-$('small.msg').remove();
+$('div.msg').remove();
 if(error){
-  html = "<small class=\"msg green\"><%= @subscription.errors.full_messages.join(', ') %></small>"
+  html = "<div class=\"msg green text-center\"><%= @subscription.errors.full_messages.join(', ') %></div>"
   $('.email-input').parents('form').append(html);
 }else{
-  html = "<small class=\"msg green\">Thank you!</small>"
+  html = "<div class=\"msg green text-center\">Thank you! We will get in touch with you shortly</div>"
   $('.email-input').parents('form').append(html);
   $('.email-input').val('');
 }
