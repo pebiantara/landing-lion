@@ -11,9 +11,25 @@ class RegistrationsController < ApplicationController
 	  @user = @results["user"]
 	  @errors = @results["errors"]
     if @results["state"]
-      redirect_to root_path, notice: 'Successfully'
+      session[:droplet] = @results["user"]["droplet"]["id"] rescue nil
+      redirect_to building_droplet_path, notice: 'Successfully'
     else
       render :new
     end
+  end
+
+  def building_droplet
+    if session[:droplet].nil?
+      redirect_to sign_up_path and return
+    end
+  end
+
+  def checking_droplet
+    @results = RestClient.get("#{main_server}/api/v1/droplets/#{params[:id]}")
+    @results = JSON.parse(@results)
+    if @results["status"].eql?('done')
+      session[:droplet] = nil
+    end 
+    render json: @results
   end
 end
