@@ -53,8 +53,6 @@ h2{
 .btn{margin-bottom: 2px;}
 .dropdown-password{margin-top: 36px !important;}
 
-footer{position: fixed; bottom: 0;}
-
 .sign-up-form{
   padding: 20px;
   margin-top: 25px;
@@ -109,7 +107,7 @@ section{min-height: 100px; padding: 50px 0px;}
 .section-two{padding-bottom: 75px; padding-top: 100px;}
 .section-three{min-height: 700px;}
 .section-one{min-height: 708px;}
-.section-five{padding-top: 30px; margin-bottom: 100px;}
+.section-five{padding-top: 30px;}
 .section-four{padding-bottom: 50px;}
 .section-four .title-1{margin-top: 40px;}
 .text-info{color: #9c9aa0; text-align: center; font-size: 20px;margin-top: 30px; margin-bottom: 20px;}
@@ -178,14 +176,14 @@ footer ul li a{
 	float: left;
 	color: #fff;
 }
-footer{background: #595658; height: 100px; padding-top: 20px;}
+footer{background: #595658; min-height: 100px; padding-top: 20px;}
 footer { width: 100%; overflow: hidden; }
 footer ul { list-style: none; position: relative; float: left; display: block; left: 50%; }
 footer ul li { position: relative; float: left; display: block; right: 50%; margin-left:30px;}
 .copyright{color: #fff;}
 footer p{text-align: center; margin-top: 10px;}
 footer ul li a:hover{color: #98bf11;}
-.ready{padding: 10px;font-size: 20px; text-align: center;}
+.ready{font-size: 32px; text-align: center;}
 
 .arrow-up {
 	background-size: 100%;
@@ -284,14 +282,16 @@ ul.nav.navbar-nav.navbar-right{padding-top: 10px;}
 @media (min-width: 993px) and (max-width: 1200px){
   .pipe-top, .pipe-bottom{margin-left: 50px;}
   .cars{margin-left: 150px;}
+  .pipe-top{background-size: 85%;}
 }
 
 @media (min-width: 768px) and (max-width: 992px){
   .pipe-top{
-  	width: 610px;
+  	/*width: 610px;*/
     height: 500px;
-    margin-top: 217px;
-    margin-left: 66px;
+    margin-top: 176px;
+    margin-left: -2px;
+    background-size: 75%;
   }
   .pipe-bottom{
     width: 600px;
@@ -390,13 +390,14 @@ ul.nav.navbar-nav.navbar-right{padding-top: 10px;}
     margin-top: 290px;
     margin-left: -23px;
   }
-  .section-one{padding-top: 0px; min-height: 485px;}
+  .section-one{padding-top: 100px; min-height: 485px;}
   .text-info{
   	font-size: 15px;
     margin-top: 15px;
   }
   .form-subscribe form{margin-left: -30px;}
-  h1{font-size: 25px;}
+  h1{font-size: 32px;}
+  h2{font-size: 25px;}
 }
 
 @media(max-width: 390px){
@@ -418,7 +419,7 @@ ul.nav.navbar-nav.navbar-right{padding-top: 10px;}
     margin-top: 290px;
     margin-left: -23px;
   }
-  .section-one{padding-top: 0px; min-height: 485px;}
+  .section-one{padding-top: 100px; min-height: 485px;}
   .text-info{
   	font-size: 15px;
     margin-top: 15px;
