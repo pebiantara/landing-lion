@@ -47,7 +47,9 @@ checkingDroplet = function(droplet_id){
           $(".setup-droplet .percents").html(data.messages + " " + data.percents + "%");
           $('.progress-bar-striped').css({width: data.percents + "%"});
           setInterval(function(){
-            $(".redirect-info").html('<small>Done, redirecting in '+sec+' seconds.</small>');
+            if(sec >= 0)
+              $(".redirect-info").html('<small>Done, redirecting in '+sec+' seconds.</small>');
+  
             if(sec == 0)
               window.location = data.url;
             sec -= 1;
