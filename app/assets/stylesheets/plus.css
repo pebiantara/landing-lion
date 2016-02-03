@@ -1,9 +1,10 @@
 body{
-	font-family: 'nexa';
-	color: #595658;
-	font-size: 15px;
+  font-family: Dosis, Arial, sans-serif;	
+  color: #595658;
+	font-size: 18px;
 	overflow-x: hidden;
 }
+
 header{
   position:fixed;
   width:100%;
@@ -11,8 +12,17 @@ header{
   opacity: 1;
 }
 
+h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 32px;
+  font-weight: 500;
+}
 .section-one h1, .title-1, .dropdown-menu, .sign-up-form{
-  font-family: 'nexa-light';
+  /*font-family: 'nexa-light';*/
 }
 .gray-background{background-color: #f2f0f0; }
 .green{color: #98bf11;}
@@ -92,7 +102,7 @@ input.form-control::-webkit-input-placeholder,
 .second_color{color: #9c9aa0;}
 header nav.header{padding: 10px;border-bottom: 5px solid #98bf11;}
 .section-one{padding-top: 100px;}
-.section-one h1, .section-one h2{text-align: center; font-weight: bold;}
+.section-one h1, .section-one h2{text-align: center;}
 
 section{min-height: 100px; padding: 50px 0px;}
 
@@ -102,7 +112,7 @@ section{min-height: 100px; padding: 50px 0px;}
 .section-five{padding-top: 30px; margin-bottom: 100px;}
 .section-four{padding-bottom: 50px;}
 .section-four .title-1{margin-top: 40px;}
-.text-info{color: #9c9aa0; text-align: center; font-size: 20px;margin-top: 50px; margin-bottom: 20px;}
+.text-info{color: #9c9aa0; text-align: center; font-size: 20px;margin-top: 30px; margin-bottom: 20px;}
 
 input.email-input{
 	width: 80%; 
@@ -143,7 +153,6 @@ button:focus {
 
 .title-1{
 	font-size: 35px; 
-	font-weight: bold; 
 	text-align: center;
 }
 
@@ -212,7 +221,7 @@ footer ul li a:hover{color: #98bf11;}
 	background-size: 100%;
 	width: 925px;
 	height: 500px;
-	margin-top: 162px;
+	margin-top: 142px;
 	margin-left: 100px;
 }
 
