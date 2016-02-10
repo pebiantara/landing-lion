@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
 	    	@message = @results["message"]
 	      session[:api_user] = @results["user"]
 	      @redirect_to = if session[:api_user]["droplet"]
-          "http://#{session[:api_user]["droplet"]["ip_address"]}/members/#{session["api_user"]["id"]}?token=#{session[:api_user]["api_key"]}"
+          "http://#{session[:api_user]["droplet"]["domain"]}/members/#{session["api_user"]["id"]}?token=#{session[:api_user]["api_key"]}"
         else
           "#{main_server}/members/#{session[:api_user]["id"]}?token=#{session[:api_user]["api_key"]}"
 	      end
