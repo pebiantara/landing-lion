@@ -107,7 +107,7 @@ input.form-control::-webkit-input-placeholder,
 
 .dropdown-menu{min-width: 300px; padding: 10px;}
 .dropdown-menu a{color: #9c9aa0 !important;}
-.ct-padding{padding-bottom: 150px; padding-top: 100px;}
+.ct-padding{padding-bottom: 100px; padding-top: 100px;}
 .logo img{width: 200px;}
 .second_color{color: #9c9aa0;}
 header nav.header{padding: 10px;border-bottom: 5px solid #98bf11;}
