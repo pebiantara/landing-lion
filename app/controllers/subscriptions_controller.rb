@@ -3,7 +3,8 @@ class SubscriptionsController < ApplicationController
   def create
     @subscription = MailSubscription.new(subscription_params)
     if @subscription.save
-      Subscribe.subscription(@subscription.email).deliver_now
+      #Subscribe.subscription(@subscription.email).deliver_now
+      Subscribe.notify(@subscription.email, @subscription.created_at).deliver_now
     end
   end
 

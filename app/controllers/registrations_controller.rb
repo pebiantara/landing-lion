@@ -11,8 +11,8 @@ class RegistrationsController < ApplicationController
 	  @user = @results["user"]
 	  @errors = @results["errors"]
     if @results["state"]
-      session[:droplet] = @results["user"]["droplet"]["id"] rescue nil
-      redirect_to building_droplet_path, notice: 'Successfully'
+      # session[:droplet] = @results["user"]["droplet"]["id"] rescue nil
+      redirect_to @results["redirect_url"], notice: 'Successfully'
     else
       render :new
     end

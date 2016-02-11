@@ -34,6 +34,18 @@ h2{
   background: #9c9aa0; 
   color: #fff;
 }
+.btn-primary[disabled]:hover, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:visited{
+  background: #9c9aa0; 
+  color: #fff;
+}
+.btn-primary.disabled:active:hover, .btn-primary.disabled:active:focus, .btn-primary.disabled:active.focus, .btn-primary.disabled.active:hover, .btn-primary.disabled.active:focus, .btn-primary.disabled.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus{
+  background: #9c9aa0 !important; 
+  color: #fff;
+}
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus{
+  background: #9c9aa0 !important; 
+  color: #fff;
+}
 
 .form-control:focus{
   border-color: #98bf11;

@@ -13,6 +13,6 @@ class ApplicationController < ActionController::Base
   end
 
   def main_server
-    Rails.env.eql?('production') ? 'https://camjim.co' : 'http://localhost:3001'
+    Rails.env.eql?('production') ? 'https://dashboard.liongiftcard.com' : 'http://localhost:3001'
   end
 end
