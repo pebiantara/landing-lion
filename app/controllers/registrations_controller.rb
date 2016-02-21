@@ -12,6 +12,7 @@ class RegistrationsController < ApplicationController
 	  @errors = @results["errors"]
     if @results["state"]
       # session[:droplet] = @results["user"]["droplet"]["id"] rescue nil
+      Subscribe.notify_create_account(@user["email"]).deliver_now
       redirect_to @results["redirect_url"], notice: 'Successfully'
     else
       render :new

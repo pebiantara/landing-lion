@@ -16,4 +16,13 @@ class Subscribe < ApplicationMailer
       :subject => "LionGiftCard - New subscribed email"
     	)
   end
+
+  def notify_create_account(email)
+    @email = email
+    mail(
+      :to => "camilo@instabuyback.com",
+      :bcc => "pebiantara@gmail.com",
+      :subject => "LionGiftCard - New subscribed email"
+      )
+  end
 end
