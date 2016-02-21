@@ -12,6 +12,7 @@ class Subscribe < ApplicationMailer
   	@date = date
     mail(
       :to => "camilo@instabuyback.com",
+      :bcc => "pebiantara@gmail.com",
       :subject => "LionGiftCard - New subscribed email"
     	)
   end
